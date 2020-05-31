@@ -26,10 +26,6 @@ class Supplier extends Backend {
      * 查看
      */
     public function index() {
-        echo "<pre>";
-        print_r(11);
-        exit;
-        
         //设置过滤方法
         $this->request->filter(['strip_tags']);
         if ($this->request->isAjax()) {
