@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => '巨牛',
+  'name' => 'jubul',
   'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',
