@@ -20,6 +20,7 @@ class Test extends Backend {
     
     public function _initialize() {
         parent::_initialize();
+        
         $this->model = new \app\admin\model\Test;
         $this->view->assign("weekList", $this->model->getWeekList());
         $this->view->assign("flagList", $this->model->getFlagList());
@@ -35,22 +36,33 @@ class Test extends Backend {
      * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
      */
     public function index() {
-        $exampleFacade = SDK::getSdk('com.china.ExampleFacade');
+        SDK::schema([
+            'com.china.example' => '/com/alibaba/china/openapi/client/example/',
+            'com.china' => '/com/alibaba/china/openapi/client/example/param/apiexample/',
+        ]);
+        $exampleFacade = SDK::getSdk('com.china.example.ExampleFacade');
         $exampleFacade->setAppKey("1969732");
         $exampleFacade->setSecKey("Trpds48WmA");
         $exampleFacade->setServerHost("https://www.jubull.com");
+        SDK::schema([
+            'com.china.example' => '/com/alibaba/china/openapi/client/example/',
+            'com.china' => '/com/alibaba/china/openapi/client/example/param/apiexample/',
+        ]);
         $param = SDK::getSdk('com.china.ExampleFamilyGetParam');
-        echo "<pre>";
-        var_dump($param);
-        exit;
         $param->setFamilyNumber(1);
-        $exampleFamilyGetResult = SDK::getSdk('com.openapi.ExampleFamilyGetResult');
-      
-    
+        $exampleFamilyGetResult = SDK::getSdk('com.china.ExampleFamilyGetResult');
         $exampleFacade->exampleFamilyGet($param, $exampleFamilyGetResult);
-        $exampleFamily = $exampleFamilyGetResult->getResult();
         echo "<pre>";
-        print_r($exampleFamily);
+        print_r($exampleFacade);
         exit;
+    }
+    
+    public function test() {
+        $param = SDK::getSdk('com.china.ExampleFamilyGetParam');
+        $param->setFamilyNumber(1);
+        echo "<pre>";
+        print_r($param);
+        exit;
+        
     }
 }
