@@ -6,83 +6,83 @@ include_once ('com/alibaba/logistics/param/AlibabaBulksettlementOpReceiveNoteMod
 
 class AlibabaBulksettlementOpBulkSettlementQueryReceiveNoteListByIdsResult {
 
-        	
+    
     private $result;
     
         /**
-    * @return 
+    * @return
     */
         public function getResult() {
         return $this->result;
     }
     
     /**
-     * 设置     
-     * @param AlibabaBulksettlementOpReceiveNoteModels $result     
-          
+     * 设置
+     * @param AlibabaBulksettlementOpReceiveNoteModels $result
+     
      * 此参数必填     */
     public function setResult(AlibabaBulksettlementOpReceiveNoteModels $result) {
         $this->result = $result;
     }
     
-        	
+    
     private $errorCode;
     
         /**
-    * @return 
+    * @return
     */
         public function getErrorCode() {
         return $this->errorCode;
     }
     
     /**
-     * 设置     
-     * @param String $errorCode     
-          
+     * 设置
+     * @param String $errorCode
+     
      * 此参数必填     */
     public function setErrorCode( $errorCode) {
         $this->errorCode = $errorCode;
     }
     
-        	
+    
     private $errorMessage;
     
         /**
-    * @return 
+    * @return
     */
         public function getErrorMessage() {
         return $this->errorMessage;
     }
     
     /**
-     * 设置     
-     * @param String $errorMessage     
-          
+     * 设置
+     * @param String $errorMessage
+     
      * 此参数必填     */
     public function setErrorMessage( $errorMessage) {
         $this->errorMessage = $errorMessage;
     }
     
-        	
+    
     private $extErrorMessage;
     
         /**
-    * @return 
+    * @return
     */
         public function getExtErrorMessage() {
         return $this->extErrorMessage;
     }
     
     /**
-     * 设置     
-     * @param String $extErrorMessage     
-          
+     * 设置
+     * @param String $extErrorMessage
+     
      * 此参数必填     */
     public function setExtErrorMessage( $extErrorMessage) {
         $this->extErrorMessage = $extErrorMessage;
     }
     
-    	
+    
 	private $stdResult;
 	
 	public function setStdResult($stdResult) {

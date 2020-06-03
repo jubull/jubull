@@ -37,6 +37,12 @@ class SDK
 	{
 		if (!isset(self::$classMap[$api])) {
 			$json = include_once (__DIR__.'\helper.php');
+			echo "<pre>";
+			
+//            print_r($json);
+            print_r($json[$api]);
+			
+			
 			if (!isset($json[$api])) {
 				return false;
 			}

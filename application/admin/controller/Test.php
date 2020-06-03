@@ -35,10 +35,22 @@ class Test extends Backend {
      * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
      */
     public function index() {
-        SDK::schema();
-        $obj = SDK::getSdk('com.logistics.AlibabaBulksettlementOpBulkSettlementQueryReceiveNoteListByIdsParam');
+        $exampleFacade = SDK::getSdk('com.china.ExampleFacade');
+        $exampleFacade->setAppKey("1969732");
+        $exampleFacade->setSecKey("Trpds48WmA");
+        $exampleFacade->setServerHost("https://www.jubull.com");
+        $param = SDK::getSdk('com.china.ExampleFamilyGetParam');
         echo "<pre>";
-        print_r($obj);
+        var_dump($param);
+        exit;
+        $param->setFamilyNumber(1);
+        $exampleFamilyGetResult = SDK::getSdk('com.openapi.ExampleFamilyGetResult');
+      
+    
+        $exampleFacade->exampleFamilyGet($param, $exampleFamilyGetResult);
+        $exampleFamily = $exampleFamilyGetResult->getResult();
+        echo "<pre>";
+        print_r($exampleFamily);
         exit;
     }
 }

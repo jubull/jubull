@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58ca8889894331ae0decd22d795ede37",
+    "content-hash": "7e3a21347da89996167ba563c5942495",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -373,6 +373,39 @@
             "description": "addons package for fastadmin",
             "homepage": "https://github.com/karsonzhang/fastadmin-addons",
             "time": "2019-08-27T12:10:18+00:00"
+        },
+        {
+            "name": "makcent/alibabasdk",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/makcent/1688sdk.git",
+                "reference": "75827ee1155b35b60ebd84d0086b50564ad0b235"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/makcent/1688sdk/zipball/75827ee1155b35b60ebd84d0086b50564ad0b235",
+                "reference": "75827ee1155b35b60ebd84d0086b50564ad0b235",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "makcent\\AlibabaSDK\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "久居你心",
+                    "email": "712042812@qq.com"
+                }
+            ],
+            "description": "this is 1688 api sdk",
+            "time": "2018-10-19T06:29:57+00:00"
         },
         {
             "name": "markbaker/complex",

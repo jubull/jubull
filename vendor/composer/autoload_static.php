@@ -85,6 +85,10 @@ class ComposerStaticInitee15cbb6ed33e5b662fcb3f36298dc5c
             'think\\captcha\\' => 14,
             'think\\' => 6,
         ),
+        'm' => 
+        array (
+            'makcent\\AlibabaSDK\\' => 19,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php72\\' => 23,
@@ -145,6 +149,10 @@ class ComposerStaticInitee15cbb6ed33e5b662fcb3f36298dc5c
         array (
             0 => __DIR__ . '/..' . '/karsonzhang/fastadmin-addons/src',
             1 => __DIR__ . '/../..' . '/thinkphp/library/think',
+        ),
+        'makcent\\AlibabaSDK\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/makcent/alibabasdk/src',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (

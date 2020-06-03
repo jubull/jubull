@@ -1,20 +1,20 @@
 <?php
-include_once ('com/alibaba/openapi/client/APIId.class.php');
-include_once ('com/alibaba/openapi/client/APIRequest.class.php');
-include_once ('com/alibaba/openapi/client/APIResponse.class.php');
-include_once ('com/alibaba/openapi/client/SyncAPIClient.class.php');
-include_once ('com/alibaba/openapi/client/entity/AuthorizationToken.class.php');
-include_once ('com/alibaba/openapi/client/entity/ParentResult.class.php');
-include_once ('com/alibaba/openapi/client/entity/ResponseStatus.class.php');
-include_once ('com/alibaba/openapi/client/entity/ResponseWrapper.class.php');
-include_once ('com/alibaba/openapi/client/policy/ClientPolicy.class.php');
-include_once ('com/alibaba/openapi/client/policy/DataProtocol.class.php');
-include_once ('com/alibaba/openapi/client/policy/RequestPolicy.class.php');
-
-include_once ('com/alibaba/china/openapi/client/example/param/apiexample/ExampleFamilyGetParam.class.php');
-include_once ('com/alibaba/china/openapi/client/example/param/apiexample/ExampleFamilyPostParam.class.php');
-include_once ('com/alibaba/china/openapi/client/example/param/apiexample/ExampleFamilyGetResult.class.php');
-include_once ('com/alibaba/china/openapi/client/example/param/apiexample/ExampleFamilyPostResult.class.php');
+//include_once ('com/alibaba/openapi/client/APIId.class.php');
+//include_once ('com/alibaba/openapi/client/APIRequest.class.php');
+//include_once ('com/alibaba/openapi/client/APIResponse.class.php');
+//include_once ('com/alibaba/openapi/client/SyncAPIClient.class.php');
+//include_once ('com/alibaba/openapi/client/entity/AuthorizationToken.class.php');
+//include_once ('com/alibaba/openapi/client/entity/ParentResult.class.php');
+//include_once ('com/alibaba/openapi/client/entity/ResponseStatus.class.php');
+//include_once ('com/alibaba/openapi/client/entity/ResponseWrapper.class.php');
+//include_once ('com/alibaba/openapi/client/policy/ClientPolicy.class.php');
+//include_once ('com/alibaba/openapi/client/policy/DataProtocol.class.php');
+//include_once ('com/alibaba/openapi/client/policy/RequestPolicy.class.php');
+//
+//include_once ('com/alibaba/china/openapi/client/example/param/apiexample/ExampleFamilyGetParam.class.php');
+//include_once ('com/alibaba/china/openapi/client/example/param/apiexample/ExampleFamilyPostParam.class.php');
+//include_once ('com/alibaba/china/openapi/client/example/param/apiexample/ExampleFamilyGetResult.class.php');
+//include_once ('com/alibaba/china/openapi/client/example/param/apiexample/ExampleFamilyPostResult.class.php');
 
 class ExampleFacade {
 	private $serverHost = "gw.open.1688.com";
