@@ -380,41 +380,6 @@
         "homepage": "https://github.com/karsonzhang/fastadmin-addons"
     },
     {
-        "name": "makcent/alibabasdk",
-        "version": "v1.0.2",
-        "version_normalized": "1.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/makcent/1688sdk.git",
-            "reference": "75827ee1155b35b60ebd84d0086b50564ad0b235"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/makcent/1688sdk/zipball/75827ee1155b35b60ebd84d0086b50564ad0b235",
-            "reference": "75827ee1155b35b60ebd84d0086b50564ad0b235",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4"
-        },
-        "time": "2018-10-19T06:29:57+00:00",
-        "type": "project",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "makcent\\AlibabaSDK\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "久居你心",
-                "email": "712042812@qq.com"
-            }
-        ],
-        "description": "this is 1688 api sdk"
-    },
-    {
         "name": "markbaker/complex",
         "version": "1.4.8",
         "version_normalized": "1.4.8.0",
