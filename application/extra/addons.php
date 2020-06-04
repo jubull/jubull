@@ -4,6 +4,14 @@ return array (
   'autoload' => false,
   'hooks' => 
   array (
+    'electronics_build' => 
+    array (
+      0 => 'electronics',
+    ),
+    'electronics_query' => 
+    array (
+      0 => 'electronics',
+    ),
   ),
   'route' => 
   array (

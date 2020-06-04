@@ -5,6 +5,7 @@ namespace app\admin\controller;
 use app\common\controller\Backend;
 use com\alibaba\china\openapi\client\example\ExampleFacade;
 
+
 /**
  * 测试管理
  *
@@ -38,9 +39,8 @@ class Test extends Backend {
     public function index() {
         $exampleFacade = new ExampleFacade();
         echo "<pre>";
-        print_r($exampleFacade);
+        print_r(11);
         exit;
-        
     }
     
     
