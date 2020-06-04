@@ -245,6 +245,13 @@ class ComposerStaticInitee15cbb6ed33e5b662fcb3f36298dc5c
     );
 
     public static $prefixesPsr0 = array (
+        'a' => 
+        array (
+            'alibabasdk' => 
+            array (
+                0 => __DIR__ . '/..' . '/jubull/alibabasdk/src',
+            ),
+        ),
         'P' => 
         array (
             'Pimple' => 
