@@ -3,7 +3,7 @@
 namespace app\admin\controller;
 
 use app\common\controller\Backend;
-use makcent\AlibabaSDK\SDK;
+
 
 /**
  * 测试管理
@@ -36,33 +36,8 @@ class Test extends Backend {
      * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
      */
     public function index() {
-        SDK::schema([
-            'com.china.example' => '/com/alibaba/china/openapi/client/example/',
-            'com.china' => '/com/alibaba/china/openapi/client/example/param/apiexample/',
-        ]);
-        $exampleFacade = SDK::getSdk('com.china.example.ExampleFacade');
-        $exampleFacade->setAppKey("1969732");
-        $exampleFacade->setSecKey("Trpds48WmA");
-        $exampleFacade->setServerHost("https://www.jubull.com");
-        SDK::schema([
-            'com.china.example' => '/com/alibaba/china/openapi/client/example/',
-            'com.china' => '/com/alibaba/china/openapi/client/example/param/apiexample/',
-        ]);
-        $param = SDK::getSdk('com.china.ExampleFamilyGetParam');
-        $param->setFamilyNumber(1);
-        $exampleFamilyGetResult = SDK::getSdk('com.china.ExampleFamilyGetResult');
-        $exampleFacade->exampleFamilyGet($param, $exampleFamilyGetResult);
-        echo "<pre>";
-        print_r($exampleFacade);
-        exit;
+
     }
     
-    public function test() {
-        $param = SDK::getSdk('com.china.ExampleFamilyGetParam');
-        $param->setFamilyNumber(1);
-        echo "<pre>";
-        print_r($param);
-        exit;
-        
-    }
+    
 }
